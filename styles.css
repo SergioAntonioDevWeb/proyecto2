@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Encabezado */
+header {
+    background-color: #1d3557;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fca311;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #fca311;
+    color: #1d3557;
+    transition: 0.3s;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+}
+
+/* Secciones */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Tarjetas de películas */
+.pelicula {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.pelicula img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Sección SERIES con estilo distinto */
+#series {
+    background-color: #ffe0b2;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+  }
+  
+  .serie {
+    background-color: #fff3e0;
+    border: 1px solid #ffa726;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .serie img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  /* 📱 ESTILOS PARA MÓVILES */
+@media (max-width: 768px) {
+    .pelicula,
+    .serie {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .pelicula img,
+    .serie img {
+      width: 100%;
+      height: auto;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    nav a {
+      display: block;
+      padding: 0.5rem;
+      background-color: #003049;
+      color: #ffd60a;
+      border-radius: 8px;
+    }
+  }
